@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Menu</title>
+</head>
+<body>
+  <nav id="account-nav">
+    <div class="first-part">
+      <div class="logo">ExCyber</div>
+      <div class="current-date">this.date()</div>
+    </div>
+    <div class="second-part search-bar">
+      <label for="search">Search new Items</label>
+      <input aria-label="Search new Items" type="search" name="search" id="search">
+    </div>
+    <div class="third-part">
+      <div class="account-balance">$122</div>
+      <div class="personal-info">
+        <h6>Joana</h6>
+        <div class="new-session">
+          <ul>
+            <li class="login">Everton</li>
+            <li class="login">Admin</li>
+            <li class="login">Joana</li>
+          </ul>
+        </div>
+      </div>
+      <button class="quit">quit</button>
+    </div>
+  </nav>
+  <!-- nav Ends here -->
+
+  <!-- This section surrounds all sort options and all items to buy -->
+  <section class="container">
+    <!-- Header starts -->
+    <div class="header-container">
+      <h2 class="title">Sort Items</h2>
+      <div class="underline"></div>
+      <div class="sort-options-container">
+        <button min="0" max="9999"type="button" class="all">All</button>
+        <button min="0" max="250" type="button" class="all">Less than $250</button>
+        <button min="250" max="500"  type="button" class="all">$250 - $500</button>
+        <button min="500" max="750"  type="button" class="all">$500 - $750</button>
+        <button min="750" max="9999"  type="button" class="all">More than $750</button>
+        <div class="hidden-results-container">Results hidden: <span class="hidden-results-number">6</span></div>
+      </div>
+    </div>
+    <!-- End of Header -->
+
+    <!-- Starts of item containers -->
+    <div class="items-container">
+      </div>
+      <!-- item2 Starts-->
+  
+      <!-- End of item2-->
+
+    </div>
+  </section>
+  
+
+  <template id="item-template">
+    <!-- item3 Starts-->
+    <div class="item">
+      <div class="item-flex-child img-container"><img src="https://source.unsplash.com/random" alt="item-img-goes-here"
+          srcset=""></div>
+      <div class="item-flex-child description-container">
+        <h6 class="item-title">
+          Lorem ipsum dolor sit amet, consectetur adipisicing
+        </h6>
+        <p class="item-flex-child description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore fugit
+          assumenda sequi blanditiis. Iste, praesentium commodi?</p>
+        <h6 class="item-flex-child item-price">$40</h6>
+        <button class="item-flex-child buy">buy</button>
+        <div class="buy-popup">
+          <p> Are you sure you wanna buy this?</p>
+          <button class="btn-popup btn-yes">yes</button>
+          <button class="btn-popup btn-no">no</button>
+          <div style="float: right;" class="saldo">
+            <p>seu saldo é de:</p>
+            <p style="color: green;float: right;">300</p>
+            <p style="color: red;float: right;">-30</p>
+            <p style="float: right;">270</p>
+          <div/>
+          
+          
+        </div>
+      </div>
+    </div>
+    <!-- End of item3-->
+  </template>
+</body>
+<script src="./js/user.js"></script>
+<script src="./js/session.js"></script>
+<script src="./js/items.js"></script>
+<script src="./js/app.js"></script>
+</html>
